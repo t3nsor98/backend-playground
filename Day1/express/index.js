@@ -3,6 +3,15 @@ import express from "express";
 const app = express();
 const port = 3000;
 
+
+function logger(req,res,next){
+    console.log("Request Method:" , req.method, "Request Url:", req.url);
+    next();
+}
+
+
+app.use(logger);
+
 app.get("/", (req, res) => {
     res.send("<h1>Hello I am Digbijaya</h1>");
     res.sendStatus(100);
