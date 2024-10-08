@@ -1,28 +1,8 @@
-// Todays Topic
-/*
-Object.keys()
-Object.Values()
-Object.entries()
-*/
-const strawHatCrew = {
-  luffy: "Captain",
-  zoro: "Swordsman / First Mate",
-  nami: "Navigator",
-  usopp: "Sniper",
-  sanji: "Cook",
-  chopper: "Doctor",
-  robin: "Archaeologist",
-  franky: "Shipwright",
-  brook: "Musician",
-  jinbe: "Helmsman",
-};
+Array.prototype.sortNum = function(){
+    return this.sort((a,b)=>a-b);
+}
 
 
-// console.table(strawHatCrew);
+let numbers = [23,65,34,23,12,64,21,42,1,5,8,5,7];
 
-// console.log(Object.keys(strawHatCrew));
-// console.log(Object.values(strawHatCrew));
-console.table(Object.entries(strawHatCrew));
-
-
-
+console.log(numbers.sortNum());
